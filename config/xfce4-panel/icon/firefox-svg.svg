@@ -1,10 +1,1 @@
-<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-	<title>firefox-svg</title>
-	<defs>
-		<image  width="20" height="22" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAMAAAD3n0w0AAAAAXNSR0IB2cksfwAAAEtQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////g5kLBwAAABl0Uk5TABDPkP9AgO8g8J9fr1DfMHDgsKBvwNC/T7k+Jk4AAACrSURBVHicbZGNFoMgCIWh0LKtdLVc7/+kQ8D+tntOR/qCCxjASYjwI2zaP4zI3aEnoq6vGZ4fPgNDarBW4eABHyR6jgW3RBO1MTmXXoX6GaCX712UoqWEIYp9Cd8Mx6WTXFjJlNWKtYKh1ZdhUF8UhjpeUCgd9/UsUzwnY848k5zDvj0rAarNZ4N+m7QaoQ56SBrkK8vqdKHZbl9WNs3HH3GLtAvz7eYdq8ZfPKwGgyeIetcAAAAASUVORK5CYII="/>
-	</defs>
-	<style>
-		tspan { white-space:pre }
-	</style>
-	<use id="Layer" href="#img1" x="2" y="1" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" baseProfile="tiny-ps" version="1.2" viewBox="0 0 24 24"><title>firefox-svg</title><defs><image id="img1" width="20" height="22" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAMAAAD3n0w0AAAAAXNSR0IB2cksfwAAAEtQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////g5kLBwAAABl0Uk5TABDPkP9AgO8g8J9fr1DfMHDgsKBvwNC/T7k+Jk4AAACrSURBVHicbZGNFoMgCIWh0LKtdLVc7/+kQ8D+tntOR/qCCxjASYjwI2zaP4zI3aEnoq6vGZ4fPgNDarBW4eABHyR6jgW3RBO1MTmXXoX6GaCX712UoqWEIYp9Cd8Mx6WTXFjJlNWKtYKh1ZdhUF8UhjpeUCgd9/UsUzwnY848k5zDvj0rAarNZ4N+m7QaoQ56SBrkK8vqdKHZbl9WNs3HH3GLtAvz7eYdq8ZfPKwGgyeIetcAAAAASUVORK5CYII="/></defs><style/><use id="Layer" x="2" y="1" href="#img1"/></svg>

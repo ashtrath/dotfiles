@@ -9,7 +9,7 @@ Automaticly increase length: No\
 Adjust Icons size automatically: Yes
 
 ### Items/Plugins:
-*Disclaimer: you need to edit gtk.css because classes name might be different to get the same result*
+*Disclaimer: to get the same result, you need to edit gtk.css because classes name might be different*
 
 - Whisker Menu
 * For Workspace Switcher (use wmctrl package to for the command)

@@ -9,7 +9,7 @@
 ## Preview
 Desktop:
 <p align="center">
-  <img src="assets/preview.png">
+  <img src="assets/desktop.png">
 </p>
 Terminal:
 <p align="center">

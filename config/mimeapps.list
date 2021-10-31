@@ -1,0 +1,14 @@
+[Added Associations]
+text/plain=org.xfce.mousepad.desktop;
+application/x-shellscript=org.xfce.mousepad.desktop;nvim.desktop;
+application/xml=org.xfce.mousepad.desktop;
+inode/symlink=org.xfce.mousepad.desktop;
+application/x-executable=org.xfce.mousepad.desktop;
+application/x-ms-dos-executable=wine.desktop;
+application/json=org.xfce.mousepad.desktop;
+application/x-pak=org.gnome.FileRoller.desktop;
+application/x-theme=org.xfce.mousepad.desktop;
+text/x-makefile=org.xfce.mousepad.desktop;
+
+[Default Applications]
+x-scheme-handler/discord-529050037532098580=discord-529050037532098580.desktop

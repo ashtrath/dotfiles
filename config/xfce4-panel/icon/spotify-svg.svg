@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<title>spotify-svg</title>
+	<defs>
+		<image  width="20" height="20" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAAXNSR0IB2cksfwAAAFdQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////jkYO6AAAAB10Uk5TAGCfz/9PUN+Qj+CggMA/EL9/Xw9A79AgsK8fcG8AzUiLAAAAq0lEQVR4nHVR7RKDIAyrElBhovgBc9v7P+coMvQ8lx+FyzVJKUQJVS0AUUs6oBpkNOrHtTihu+GANmlxATvomGAeDNPvvjEXsCVxUGNqNYCzbmS4aSZaVhjyu9HYi3RYEhDEVxmSOFTPvYPJ1U5Rvzk5U9gS6c/T1C8bq+cgbGoZaFjeWW14JLhPx+GSgsjT60O9ui5W/e+Ztwu5sG1ZcvHVZcn8HSbO602mvhEYCO0Fzcs7AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Layer" href="#img1" x="2" y="2" />
+</svg>

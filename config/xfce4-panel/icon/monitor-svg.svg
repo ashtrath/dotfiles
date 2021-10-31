@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+	<title>monitor-svg</title>
+	<defs>
+		<image  width="22" height="20" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAUBAMAAAB7UtADAAAAAXNSR0IB2cksfwAAABVQTFRF////////////////AAAA////////mnrBTAAAAAd0Uk5TQN//4ADwYLcSN4oAAAAySURBVHicY2BUggEBBiM4W5FByQUGlAYFOwjuNlWGVDg7jAEk66SkAqLQ2U5ABSpobAA46DBX4fJDdQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Layer" href="#img1" x="1" y="2" />
+</svg>

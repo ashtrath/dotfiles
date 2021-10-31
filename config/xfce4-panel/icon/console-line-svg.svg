@@ -1,10 +1,1 @@
-<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-	<title>console-line-svg</title>
-	<defs>
-		<image  width="19" height="12" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAMBAMAAABy/puxAAAAAXNSR0IB2cksfwAAABVQTFRF////////////////AAAA////////mnrBTAAAAAd0Uk5TMPD/7wAQz+30DYEAAABCSURBVHicY2BUMnABAwcGByFlFijTBSYMZMKEgUyYMIgJFIYxXZMUYcwwJQEoEygI0wYSdFJSUlJgAAtCmGCVYCYAwhUZ0ZCoURAAAAAASUVORK5CYII="/>
-	</defs>
-	<style>
-		tspan { white-space:pre }
-	</style>
-	<use id="Layer" href="#img1" x="2" y="7" />
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" baseProfile="tiny-ps" version="1.2" viewBox="0 0 24 24"><title>console-line-svg</title><defs><image id="img1" width="19" height="12" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAMBAMAAABy/puxAAAAAXNSR0IB2cksfwAAABVQTFRF////////////////AAAA////////mnrBTAAAAAd0Uk5TMPD/7wAQz+30DYEAAABCSURBVHicY2BUMnABAwcGByFlFijTBSYMZMKEgUyYMIgJFIYxXZMUYcwwJQEoEygI0wYSdFJSUlJgAAtCmGCVYCYAwhUZ0ZCoURAAAAAASUVORK5CYII="/></defs><style/><use id="Layer" x="2" y="7" href="#img1"/></svg>

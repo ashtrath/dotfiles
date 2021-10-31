@@ -1,6 +1,15 @@
-XFCE Panel Items
+XFCE Panel Settings
 ---
-*Disclaimer: you need to edit gtk.css to get the same result because classes name might be different*
+### Basic Settings:
+Mode: Deskbar\
+Lock Panel: Yes\
+Row size: 33\
+Length: 96%\
+Automaticly increase length: No\
+Adjust Icons size automatically: Yes
+
+### Items/Plugins:
+*Disclaimer: you need to edit gtk.css because classes name might be different to get the same result*
 
 - Whisker Menu
 * For Workspace Switcher (use wmctrl package to for the command)

@@ -38,4 +38,4 @@ Firefox:
 - TextEditor: NeoVim
 - FileManager: Thunar, ranger
 
-for the xfce4-panel configuration you can read [this](/.config/xfce4-panel/README.md)
+for the xfce4-panel configuration you can read [this](/config/xfce4-panel/README.md)

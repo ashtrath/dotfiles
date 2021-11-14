@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=7;x=27;y=383"/>
+      <property name="length" type="uint" value="96"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="33"/>
+      <property name="background-alpha" type="uint" value="70"/>
+      <property name="length-adjust" type="bool" value="false"/>
+      <property name="background-style" type="uint" value="1"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.086275"/>
+        <value type="double" value="0.105882"/>
+        <value type="double" value="0.125490"/>
+        <value type="double" value="0.657718"/>
+      </property>
+      <property name="icon-size" type="uint" value="0"/>
+      <property name="disable-struts" type="bool" value="false"/>
+      <property name="enter-opacity" type="uint" value="100"/>
+      <property name="leave-opacity" type="uint" value="100"/>
+      <property name="mode" type="uint" value="1"/>
+      <property name="nrows" type="uint" value="1"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="2"/>
+        <value type="int" value="4"/>
+        <value type="int" value="5"/>
+        <value type="int" value="6"/>
+        <value type="int" value="8"/>
+        <value type="int" value="7"/>
+        <value type="int" value="9"/>
+        <value type="int" value="10"/>
+        <value type="int" value="1"/>
+        <value type="int" value="3"/>
+      </property>
+    </property>
+    <property name="dark-mode" type="bool" value="true"/>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-2" type="string" value="whiskermenu"/>
+    <property name="plugin-7" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-9" type="string" value="systray">
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="steam"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="premid"/>
+        <value type="string" value="discord"/>
+        <value type="string" value="networkmanager applet"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="steam"/>
+        <value type="string" value="kazam"/>
+        <value type="string" value="stacer"/>
+        <value type="string" value="PreMiD1"/>
+        <value type="string" value="discord1"/>
+      </property>
+      <property name="square-icons" type="bool" value="false"/>
+      <property name="icon-size" type="int" value="22"/>
+      <property name="hide-new-items" type="bool" value="false"/>
+      <property name="hidden-items" type="array">
+      </property>
+      <property name="hidden-legacy-items" type="array">
+      </property>
+      <property name="menu-is-primary" type="bool" value="false"/>
+      <property name="symbolic-icons" type="bool" value="false"/>
+      <property name="single-row" type="bool" value="true"/>
+    </property>
+    <property name="plugin-10" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chromium.instance1187;chromium.instance1205;chromium.instance1596;chromium.instance1705;chromium.instance1780252;chromium.instance18066;chromium.instance2146;chromium.instance2577;chromium.instance42590;chromium.instance4600;chromium.instance793;chromium.instance817;chromium.instance9712;firefox.instance1044;firefox.instance10496;firefox.instance1060;firefox.instance1473238;firefox.instance15009;firefox.instance16314;firefox.instance1632450;firefox.instance1793357;firefox.instance1882654;firefox.instance20443;firefox.instance2125818;firefox.instance23477;firefox.instance2359004;firefox.instance2663257;firefox.instance3780;firefox.instance3859701;firefox.instance3866780;firefox.instance6574;firefox.instance8047;firefox.instance834;firefox.instance847;firefox.instance852;firefox.instance854;firefox.instance862;firefox.instance871;firefox.instance891;firefox.instance922"/>
+    </property>
+    <property name="plugin-1" type="string" value="genmon"/>
+    <property name="plugin-4" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16356718151.desktop"/>
+      </property>
+      <property name="disable-tooltips" type="bool" value="true"/>
+    </property>
+    <property name="plugin-5" type="string" value="launcher">
+      <property name="disable-tooltips" type="bool" value="true"/>
+      <property name="items" type="array">
+        <value type="string" value="16356718732.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-6" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16356719093.desktop"/>
+      </property>
+      <property name="disable-tooltips" type="bool" value="true"/>
+    </property>
+    <property name="plugin-8" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="16356719614.desktop"/>
+      </property>
+      <property name="disable-tooltips" type="bool" value="true"/>
+    </property>
+    <property name="plugin-3" type="string" value="actions">
+      <property name="items" type="array">
+        <value type="string" value="-lock-screen"/>
+        <value type="string" value="-switch-user"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-suspend"/>
+        <value type="string" value="-hibernate"/>
+        <value type="string" value="-hybrid-sleep"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="+shutdown"/>
+        <value type="string" value="-restart"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-logout"/>
+        <value type="string" value="-logout-dialog"/>
+      </property>
+      <property name="appearance" type="uint" value="0"/>
+    </property>
+  </property>
+</channel>

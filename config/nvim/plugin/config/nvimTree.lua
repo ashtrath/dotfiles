@@ -1,7 +1,6 @@
 local tree = require 'nvim-tree'
 
 tree.setup {
-  lsp_diagnostics = true,
   disable_netrw = true,
   hijack_netrw = true,
   open_on_tab = false,
@@ -13,6 +12,16 @@ tree.setup {
   update_focused_file = {
      enable = true,
      update_cwd = false,
+  },
+
+  diagnostics = {
+    enable = true,
+    icons = {
+      hint = "",
+      info = "",
+      warning = "",
+      error = "",
+    }
   },
 
   view = {

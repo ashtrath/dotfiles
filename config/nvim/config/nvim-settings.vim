@@ -34,13 +34,5 @@ if has('nvim')
 endif
 
 " Enable autocompletion
-set wildmode=longest
+set wildmode=longest,list
 
-" Disables automatic commenting on newline:
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
-" Autocomand to remember last editing position
-augroup vimrc-remember-cursor-position
-  autocmd!
-  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
-augroup END

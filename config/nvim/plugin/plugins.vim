@@ -9,8 +9,8 @@
 call plug#begin('~/.local/share/nvim/site/autoload')
 
   " UI
-  Plug 'glepnir/galaxyline.nvim', {'branch': 'main'}
   Plug 'lukas-reineke/indent-blankline.nvim'
+  Plug 'nvim-lualine/lualine.nvim'
   Plug 'kyazdani42/nvim-tree.lua'
   Plug 'akinsho/bufferline.nvim'
   Plug 'glepnir/dashboard-nvim'
@@ -29,6 +29,7 @@ call plug#begin('~/.local/share/nvim/site/autoload')
   Plug 'sbdchd/neoformat'
 
   " Completion
+  Plug 'gelguy/wilder.nvim'
   Plug 'hrsh7th/nvim-cmp'
   Plug 'hrsh7th/cmp-nvim-lsp'
   Plug 'hrsh7th/cmp-path'
@@ -49,6 +50,7 @@ call plug#begin('~/.local/share/nvim/site/autoload')
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
   " Other
+  Plug 'henriquehbr/nvim-startup.lua'
   Plug 'numToStr/Comment.nvim'
   Plug 'windwp/nvim-autopairs'
   Plug 'andweeb/presence.nvim' " Discord Rich Presence

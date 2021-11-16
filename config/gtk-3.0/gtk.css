@@ -8,6 +8,7 @@
 
 /* Fancy rounded background color thing */
 #pulseaudio-button {
+  margin-bottom: 6px;
   background-color: @Background;
   border-radius: 0px 0px 8px 8px;
 }
@@ -21,14 +22,14 @@
 #genmon-1 .vertical {
   background-color: @Background;
   border-radius: 8px;
-  margin-top: 4px;
+  padding-top: 3px;
   padding-bottom: 3px;
 }
 #genmon-1 .genmon_imagebox {
   background: none
 }
 
-/* For Workspace Switcher but its broken for some reason*/
+/* For Workspace Switcher but my fonts is broken for some reason*/
 /* #pager-11 .horizontal { */
 /* 	border-radius: 8px; */
 /* 	margin-top: 3px;  */
@@ -38,6 +39,7 @@
 
 /* Workspace Switch Launcher */
 #launcher-4 .flat {
+  margin-top: 4px;
   background-color: @Background;
   border-radius: 8px 8px 0 0;
 }

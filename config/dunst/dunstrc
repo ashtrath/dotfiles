@@ -11,7 +11,7 @@
     separator_color = frame
     sort = yes
     idle_threshold = 120
-    font = JetBrains Mono 10
+    font = JetBrainsMono Nerd Font 10
     line_height = 5
     markup = full
     format = "<b>%s</b>\n%b"

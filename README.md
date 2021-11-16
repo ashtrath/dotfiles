@@ -1,6 +1,6 @@
 <h1 align="center">nord .files</h1>
 <p align="center">
-  <img width="80%" src="assets/preview.png" />
+  <img width="93%" src="assets/preview.png" />
 </p>
 <p align="center">
   <b>Ashtrath's Nordic XFCE Rice</b>
@@ -28,11 +28,11 @@ Here's stuff i used for this rice:
 
 ## Screenshot
 <p align="center">
-  <img width="93%" src="assets/desktop.png" />
+  <img width="90%" src="assets/desktop.png" />
 </p>
 <p align="center">
-  <img width="93%" src="assets/terminal.png" />
+  <img width="90%" src="assets/terminal.png" />
 </p>
 <p align="center">
-  <img width="93%" src="assets/firefox.png" />
+  <img width="90%" src="assets/firefox.png" />
 </p>

@@ -1,0 +1,191 @@
+modkey = "Mod4"
+workspaces = []
+tags = [" HOME", "爵 WEBS", " TERM", " DEVS"]
+focus_behaviour = "ClickTo"
+disable_current_tag_swap = true
+focus_new_windows = true
+
+layouts = [
+  "MainAndVertStack",
+  "MainAndDeck",
+  "EvenHorizontal",
+  "EvenVertical",
+  "Fibonacci",
+  "CenterMainBalanced",
+  "Monocle",
+  "RightWiderLeftStack",
+  "LeftWiderRightStack"
+]
+
+###############################################
+## ============= K E Y B I N D ============= ##
+###############################################
+
+###################
+# S O F T W A R E
+###############
+
+[[keybind]]
+command = "Execute"
+value = "dmenu_run -nf '#D8DEE9' -nb '#3B4252' -sb '#88BFD0' -sf '#EEEEEE' -fn 'monospace-11' -p 'search:'"
+modifier = ["modkey", "Shift"]
+key = "d"
+
+[[keybind]]
+command = "Execute"
+value = "alacritty"
+modifier = ["modkey"]
+key = "t"
+
+[[keybind]]
+command = "Execute"
+value = "firefox"
+modifier = ["modkey"]
+key = "w"
+
+[[keybind]]
+command = "Execute"
+value = "thunar"
+modifier = ["modkey"]
+key = "f"
+
+[[keybind]]
+command = "Execute"
+value = "xfce4-screenshooter -rs /dev/stdout | xclip -selection clipboard -t image/png"
+modifier = []
+key = "Print"
+
+[[keybind]]
+command = "Execute"
+value = "xfce4-taskmanager"
+modifier = ["Control", "Shift"]
+key = "Escape"
+
+#######################
+# W M S E T T I N G S
+###################
+
+[[keybind]]
+command = "HardReload"
+modifier = ["modkey", "Control"]
+key = "r"
+
+[[keybind]]
+command = "SoftReload"
+modifier = ["modkey", "Shift"]
+key = "r"
+
+[[keybind]]
+command = "CloseWindow"
+modifier = ["Control"]
+key = "q"
+
+[[keybind]]
+command = "FloatingToTile"
+modifier = ["modkey", "Shift"]
+key = "t"
+
+[[keybind]]
+command = "ToggleFullScreen"
+modifier = ["modkey", "Control"]
+key = "f"
+
+[[keybind]]
+command = "MoveWindowUp"
+modifier = ["modkey", "Shift"]
+key = "Up"
+
+[[keybind]]
+command = "MoveWindowDown"
+modifier = ["modkey", "Shift"]
+key = "Down"
+
+[[keybind]]
+command = "Execute"
+value = "wmctrl -s 0"
+modifier = ["Control"]
+key = "F1"
+
+[[keybind]]
+command = "Execute"
+value = "wmctrl -s 1"
+modifier = ["Control"]
+key = "F2"
+
+[[keybind]]
+command = "Execute"
+value = "wmctrl -s 2"
+modifier = ["Control"]
+key = "F3"
+
+[[keybind]]
+command = "Execute"
+value = "wmctrl -s 3"
+modifier = ["Control"]
+key = "F4"
+
+[[keybind]]
+command = "MoveToTag"
+value = "1"
+modifier = ["modkey", "Control"]
+key = "1"
+
+[[keybind]]
+command = "MoveToTag"
+value = "2"
+modifier = ["modkey", "Control"]
+key = "2"
+
+[[keybind]]
+command = "MoveToTag"
+value = "3"
+modifier = ["modkey", "Control"]
+key = "3"
+
+[[keybind]]
+command = "MoveToTag"
+value = "4"
+modifier = ["modkey", "Control"]
+key = "4"
+
+[[keybind]]
+command = "NextLayout"
+modifier = ["modkey", "Control"]
+key = "Up"
+
+[[keybind]]
+command = "PreviousLayout"
+modifier = ["modkey", "Control"]
+key = "Down"
+
+[[keybind]]
+command = "FocusWindowUp"
+modifier = ["modkey"]
+key = "Up"
+
+[[keybind]]
+command = "FocusWindowDown"
+modifier = ["modkey"]
+key = "Down"
+
+[[keybind]]
+command = "FocusWorkspaceNext"
+modifier = ["modkey"]
+key = "Right"
+
+[[keybind]]
+command = "FocusWorkspacePrevious"
+modifier = ["modkey"]
+key = "Left"
+
+[[keybind]]
+command = "IncreaseMainWidth"
+value = "1"
+modifier = ["modkey", "Shift"]
+key = "k"
+
+[[keybind]]
+command = "DecreaseMainWidth"
+value = "1"
+modifier = ["modkey", "Shift"]
+key = "h"

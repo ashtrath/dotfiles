@@ -1,0 +1,157 @@
+[[repos]]
+url = "https://raw.githubusercontent.com/leftwm/leftwm-community-themes/master/known.toml"
+name = "community"
+
+[[repos.themes]]
+name = "Orange Forest"
+repository = "https://github.com/PVautour/leftwm-theme-orange-forest/"
+commit = "*"
+version = "0.0.1"
+leftwm_versions = "*"
+current = false
+
+[[repos.themes]]
+name = "Coffee"
+repository = "https://github.com/lex148/leftwm-coffee/"
+commit = "*"
+version = "0.0.1"
+leftwm_versions = "*"
+current = false
+
+[[repos.themes]]
+name = "Soothe"
+repository = "https://github.com/b4skyx/leftwm-soothe/"
+commit = "*"
+version = "0.0.1"
+leftwm_versions = "*"
+current = false
+relative_directory = "theme/"
+
+[[repos.themes]]
+name = "TNG"
+repository = "https://github.com/lex148/leftwm-tng/"
+commit = "*"
+version = "0.0.1"
+leftwm_versions = "*"
+current = false
+
+[[repos.themes]]
+name = "Windows XP"
+repository = "https://github.com/lex148/leftwm-windowsxp/"
+commit = "*"
+version = "0.0.1"
+leftwm_versions = "*"
+current = false
+
+[[repos.themes]]
+name = "Dracula Rounded"
+repository = "https://github.com/AethanFoot/leftwm-theme-dracula-rounded/"
+commit = "*"
+version = "0.0.2"
+leftwm_versions = "^0.2.7"
+current = false
+
+[[repos.themes]]
+name = "Forest"
+repository = "https://github.com/lex148/forest/"
+commit = "*"
+version = "0.0.1"
+leftwm_versions = "*"
+current = false
+
+[[repos.themes]]
+name = "Ground Zero"
+repository = "https://github.com/Qwart376/Ground-Zero/"
+commit = "*"
+version = "0.0.1"
+leftwm_versions = "*"
+current = false
+
+[[repos.themes]]
+name = "Red Moon"
+repository = "https://github.com/Qwart376/Red-Moon"
+commit = "*"
+version = "0.0.1"
+leftwm_versions = "*"
+current = false
+
+[[repos.themes]]
+name = "Blue Coffee"
+repository = "https://github.com/Qwart376/Blue-Coffee/"
+commit = "*"
+version = "0.0.1"
+leftwm_versions = "*"
+current = false
+
+[[repos.themes]]
+name = "sunflower"
+repository = "https://github.com/mautamu/leftwm-sunflower/"
+commit = "*"
+version = "0.1.0"
+leftwm_versions = ">0.2.6"
+current = false
+
+[[repos.themes]]
+name = "Bumblebee"
+repository = "https://github.com/mfdorst/leftwm-bumblebee/"
+commit = "*"
+version = "0.0.1"
+leftwm_versions = "^0.2.8"
+current = false
+
+[[repos.themes]]
+name = "Changed Sunset"
+repository = "https://github.com/Syudagye/changed-sunset"
+commit = "*"
+version = "0.0.1"
+leftwm_versions = "*"
+current = false
+
+[[repos.themes]]
+name = "Garden"
+repository = "https://github.com/taylor85345/leftwm-theme-garden"
+commit = "*"
+version = "0.0.3"
+leftwm_versions = "*"
+current = false
+
+[[repos.themes]]
+name = "Epitaph"
+repository = "https://github.com/VentGrey/Epitaph"
+commit = "*"
+version = "0.0.1"
+leftwm_versions = "*"
+current = false
+
+[[repos.themes]]
+name = "Ocean-night"
+repository = "https://github.com/TheRoniOne/ocean-night"
+commit = "*"
+version = "0.0.1"
+leftwm_versions = "*"
+current = false
+
+[[repos]]
+url = "localhost"
+name = "LOCAL"
+
+[[repos.themes]]
+name = "nord"
+directory = "/home/ashtrath/.config/leftwm/themes/nord"
+version = "0.0.0"
+leftwm_versions = "*"
+current = false
+
+[[repos.themes]]
+name = "Tokyo-Night"
+directory = "/home/ashtrath/.config/leftwm/themes/Tokyo-Night"
+version = "0.0.0"
+leftwm_versions = "*"
+current = false
+
+[[repos.themes]]
+name = "Pink-ish"
+directory = "/home/ashtrath/.config/leftwm/themes/Pink-ish"
+version = "0.0.0"
+leftwm_versions = "*"
+current = true

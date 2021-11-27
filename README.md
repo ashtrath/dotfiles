@@ -1,7 +1,9 @@
-<h1 align="center">Thanks for coming here!</h1>
+<h1 align="center">Dotfiles</h1>
 
-This is my personal backup of my dotfiles collection.<br />
-Feel free to ~~steal~~ use my config! ^^
+<p align="center">
+  My dotfiles collection,
+  Feel free to use my config.
+</p>
 
 ## [XFCE] [Nordic](https://github.com/Dyzean/dotfiles/tree/main/%5BXFCE%5D%20Nord)
 

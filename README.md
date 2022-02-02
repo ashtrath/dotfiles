@@ -1,7 +1,7 @@
 <h1 align="center">Dotfiles</h1>
 
 <p align="center">
-  Thi is my dotfiles collection,
+  This is my dotfiles collection,
   Feel free to use my config.
 </p>
 

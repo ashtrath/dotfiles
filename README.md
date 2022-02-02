@@ -1,7 +1,7 @@
 <h1 align="center">Dotfiles</h1>
 
 <p align="center">
-  My dotfiles collection,
+  Thi is my dotfiles collection,
   Feel free to use my config.
 </p>
 
@@ -15,4 +15,10 @@
 
 <p align="center">
   <img width=90% src="./preview/astolfo.png" />
+</p>
+
+## [LeftWM] [Tokyo Night](https://github.com/Dyzean/dotfiles/tree/master/%5BLeftWM%5D%20Tokyo%20Night)
+
+<p align="center">
+  <img width=90% src="./preview/tokyo-night.png" />
 </p>

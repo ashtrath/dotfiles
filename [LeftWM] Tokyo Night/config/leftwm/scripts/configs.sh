@@ -1,12 +1,14 @@
+#!/usr/bin/env sh
+
 configfile="$HOME/.config/configs"
 
 get_filepath() {
-  cat "$configfile" \
+  cat < "$configfile" \
     | rofi -dmenu -i -p 'config' \
     | sed 's/^.*~//g'
 }
 
 configpath="$(get_filepath)"
-if [[ ! -z "$configpath" ]]; then
+if [ -n "$configpath" ]; then
   xdg-open "$HOME/$configpath"
 fi

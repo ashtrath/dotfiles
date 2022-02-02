@@ -1,25 +1,17 @@
-alias maimselect="maim -s --noopengl --capturebackground --hidecursor"
-alias maimfull="maim --noopengl --capturebackground --hidecursor"
+#!/usr/bin/env sh
+
+maimselect="maim -s --noopengl --capturebackground --hidecursor"
+maimfull="maim --noopengl --capturebackground --hidecursor"
 
 notification() {
-  case $1 in
-
-    area)
-      dunstify -i $tempfile "Screenshot  " "Screenshot captured and copied to clipboard!"
-      ;;
-
-    full)
-      dunstify -i $tempfile "Screenshot  " "Screenshot captured and copied to clipboard!"
-      ;;
-
-  esac
+  dunstify -i "$tempfile" "Screenshot  " "Screenshot captured and copied to clipboard!"
 }
 
 case $1 in
 
   area)
     tempfile="/tmp/screenshot-$(date +%Y%m%d_%H%M%S).png"
-    maimselect -s $tempfile && cat $tempfile | xclip -selection c -t image/png
+    $maimselect -s "$tempfile" && xclip -selection c -t image/png < "$tempfile"
 
     # Check if users cancel the screenshot
     if [ ! -f "$tempfile" ]; then
@@ -35,7 +27,7 @@ case $1 in
 
   full)
     tempfile="/tmp/screenshot-$(date +%Y%m%d_%H%M%S).png"
-    maimfull $tempfile && cat $tempfile | xclip -selection c -t image/png
+    $maimfull "$tempfile" && xclip -selection c -t image/png < "$tempfile"
 
     # Check if users cancel the screenshot
     if [ ! -f "$tempfile" ]; then

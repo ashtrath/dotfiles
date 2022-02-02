@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 rofi_command="rofi -theme $HOME/.config/rofi/theme/powermenu"
 uptime=$(uptime -p | sed -e 's/up //g')
 
@@ -10,22 +12,23 @@ logout=""
 
 # Confirmation Dialog
 confirmation() {
-  echo -e "yes\nno" | rofi -dmenu -selected-row 1 -no-fixed-num-lines -theme $HOME/.config/rofi/theme/confirm.rasi
+  printf "yes\nno" | rofi -dmenu -selected-row 1 -no-fixed-num-lines -theme "$HOME/.config/rofi/theme/confirm.rasi"
 }
 
 # Notification
 notify() {
   dunstctl close
-  dunstify -t $1 -u critical "$2" "$3"
+  dunstify -t "$1" -u critical "$2" "$3"
 }
 
 # Variable passed to rofi
 options="$shutdown\n$reboot\n$lock\n$suspend\n$logout"
 
-action="$(echo -e "$options" | $rofi_command -p "Uptime: $uptime" -dmenu -selected-row 2)"
+# shellcheck disable=SC2059
+action="$(printf "$options" | $rofi_command -p "Uptime: $uptime" -dmenu -selected-row 2)"
 case $action in
 
-  $shutdown)
+  "$shutdown")
     choice=$(confirmation &)
 
     case $choice in
@@ -40,7 +43,7 @@ case $action in
     esac
     ;;
 
-  $reboot)
+  "$reboot")
     choice=$(confirmation &)
 
     case $choice in
@@ -55,7 +58,7 @@ case $action in
     esac
     ;;
 
-  $lock)
+  "$lock")
     notify 800 "$lock Locking" "Screenlocking your computer."
     sleep 1
     if [ -x "$(command -v betterlockscreen)" ]; then
@@ -67,7 +70,7 @@ case $action in
     fi
     ;;
 
-  $suspend)
+  "$suspend")
     choice=$(confirmation &)
 
     case $choice in
@@ -86,7 +89,7 @@ case $action in
     esac
     ;;
 
-  $logout)
+  "$logout")
   choice=$(confirmation &)
 
     case $choice in
@@ -98,7 +101,7 @@ case $action in
           Openbox|openbox) openbox --exit ;;
           bspwm) bspc quit ;;
           i3) i3-msg exit ;;
-          *) pkill -u ${USER} ;;
+          *) pkill -u "${USER}" ;;
         esac
         ;;
 

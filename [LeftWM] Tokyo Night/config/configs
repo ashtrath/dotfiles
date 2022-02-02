@@ -1,0 +1,13 @@
+spotify-tui: ~/.config/spotify-tui/client.yml
+spotifyd: ~/.config/spotifyd/spotifyd.conf
+neofetch: ~/.config/neofetch/config.conf
+picom: ~/.config/picom/picom.conf
+rofi: ~/.config/rofi/config.rasi
+ranger: ~/.config/ranger/rc.conf
+dunst: ~/.config/dunst/dunstrc
+nvim: ~/.config/nvim/init.vim
+cava: ~/.config/cava/config
+configs: ~/.config/configs
+xresources: ~/.Xresources
+zsh: ~/.zshrc
+

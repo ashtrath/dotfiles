@@ -1,0 +1,239 @@
+modkey = "Mod4"
+workspaces = []
+tags = [" HOME", "爵 WEBS", " TERM", " DEVS"]
+focus_behaviour = "ClickTo"
+disable_current_tag_swap = true
+focus_new_windows = true
+
+layouts = [
+  "MainAndVertStack",
+  "MainAndDeck",
+  "EvenHorizontal",
+  "EvenVertical",
+  "Fibonacci",
+  "Monocle",
+  "CenterMainBalanced",
+  "RightWiderLeftStack",
+  "LeftWiderRightStack",
+]
+
+###############################################
+## ============== W I N D O W ============== ##
+###############################################
+
+###############################################
+## ============= K E Y B I N D ============= ##
+###############################################
+
+###################
+# S O F T W A R E
+###############
+
+[[keybind]]
+command = "Execute"
+value = "st"
+modifier = ["modkey"]
+key = "t"
+
+[[keybind]]
+command = "Execute"
+value = "alacritty"
+modifier = ["modkey", "Shift"]
+key = "t"
+
+[[keybind]]
+command = "Execute"
+value = "firefox"
+modifier = ["modkey"]
+key = "w"
+
+[[keybind]]
+command = "Execute"
+value = "thunar"
+modifier = ["modkey"]
+key = "f"
+
+[[keybind]]
+command = "Execute"
+value = "~/.config/leftwm/scripts/screenshot.sh area"
+modifier = ["Shift"]
+key = "Print"
+
+[[keybind]]
+command = "Execute"
+value = "~/.config/leftwm/scripts/screenshot.sh full"
+modifier = []
+key = "Print"
+
+[[keybind]]
+command = "Execute"
+value = "xfce4-taskmanager"
+modifier = ["Control", "Shift"]
+key = "Escape"
+
+#######################
+# M U L T I M E D I A
+###################
+
+[[keybind]]
+command = "Execute"
+value = "~/.config/leftwm/scripts/volume-changer.sh up"
+modifier = []
+key = "XF86XK_AudioRaiseVolume"
+
+[[keybind]]
+command = "Execute"
+value = "~/.config/leftwm/scripts/volume-changer.sh down"
+modifier = []
+key = "XF86XK_AudioLowerVolume"
+
+[[keybind]]
+command = "Execute"
+value = "~/.config/leftwm/scripts/volume-changer.sh mute"
+modifier = []
+key = "XF86XK_AudioMute"
+
+################
+# O T H E R S
+###########
+
+[[keybind]]
+command = "Execute"
+value = "rofi -no-lazy-grab -show drun -modi drun -theme ~/.config/rofi/theme/launcher"
+modifier = ["modkey"]
+key = "r"
+
+[[keybind]]
+command = "Execute"
+value = "~/.config/leftwm/scripts/powermenu.sh"
+modifier = ["modkey", "Control"]
+key = "p"
+
+#######################
+# W M S E T T I N G S
+###################
+
+[[keybind]]
+command = "HardReload"
+modifier = ["modkey", "Control"]
+key = "r"
+
+[[keybind]]
+command = "SoftReload"
+modifier = ["modkey", "Shift"]
+key = "r"
+
+[[keybind]]
+command = "CloseWindow"
+modifier = ["Control"]
+key = "q"
+
+[[keybind]]
+command = "ToggleFloating"
+modifier = ["modkey", "Control"]
+key = "t"
+
+[[keybind]]
+command = "ToggleFullScreen"
+modifier = ["modkey", "Control"]
+key = "f"
+
+[[keybind]]
+command = "MoveWindowUp"
+modifier = ["modkey", "Shift"]
+key = "Up"
+
+[[keybind]]
+command = "MoveWindowDown"
+modifier = ["modkey", "Shift"]
+key = "Down"
+
+[[keybind]]
+command = "GotoTag"
+value = "1"
+modifier = ["Control"]
+key = "1"
+
+[[keybind]]
+command = "GotoTag"
+value = "2"
+modifier = ["Control"]
+key = "2"
+
+[[keybind]]
+command = "GotoTag"
+value = "3"
+modifier = ["Control"]
+key = "3"
+
+[[keybind]]
+command = "GotoTag"
+value = "4"
+modifier = ["Control"]
+key = "4"
+
+[[keybind]]
+command = "MoveToTag"
+value = "1"
+modifier = ["modkey", "Control"]
+key = "1"
+
+[[keybind]]
+command = "MoveToTag"
+value = "2"
+modifier = ["modkey", "Control"]
+key = "2"
+
+[[keybind]]
+command = "MoveToTag"
+value = "3"
+modifier = ["modkey", "Control"]
+key = "3"
+
+[[keybind]]
+command = "MoveToTag"
+value = "4"
+modifier = ["modkey", "Control"]
+key = "4"
+
+[[keybind]]
+command = "NextLayout"
+modifier = ["modkey", "Control"]
+key = "Up"
+
+[[keybind]]
+command = "PreviousLayout"
+modifier = ["modkey", "Control"]
+key = "Down"
+
+[[keybind]]
+command = "FocusWindowUp"
+modifier = ["modkey"]
+key = "Up"
+
+[[keybind]]
+command = "FocusWindowDown"
+modifier = ["modkey"]
+key = "Down"
+
+[[keybind]]
+command = "FocusWorkspaceNext"
+modifier = ["modkey"]
+key = "Right"
+
+[[keybind]]
+command = "FocusWorkspacePrevious"
+modifier = ["modkey"]
+key = "Left"
+
+[[keybind]]
+command = "IncreaseMainWidth"
+value = "1"
+modifier = ["modkey", "Shift"]
+key = "k"
+
+[[keybind]]
+command = "DecreaseMainWidth"
+value = "1"
+modifier = ["modkey", "Shift"]
+key = "h"

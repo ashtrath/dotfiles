@@ -1,0 +1,41 @@
+#!/bin/bash
+export SCRIPTPATH="$(cd "$(dirname "$0")" ; pwd -P)"
+
+#down the last running theme
+if [ -f "/tmp/leftwm-theme-down" ]; then
+  /tmp/leftwm-theme-down
+  rm /tmp/leftwm-theme-down
+fi
+ln -s $SCRIPTPATH/down /tmp/leftwm-theme-down
+
+#set the theme.toml config
+leftwm command "LoadTheme $SCRIPTPATH/theme.toml"
+
+#set background
+if [ -x "$(command -v feh)" ]; then
+  feh --bg-fill $SCRIPTPATH/background.jpg
+fi
+
+#boot picom if it exists
+if [ -x "$(command -v picom)" ]; then
+  picom -b &> /dev/null & 
+fi
+
+#some startup app
+dunst &
+nm-applet &
+
+#boot polybar based on the number of monitors found
+if [ -x "$(command -v polybar)" ]; then
+  pkill polybar
+
+  index=0
+  monitors="$(polybar -m | sed s/:.*// | tac)"
+
+  while read -r display; do
+    bar="mainbar$index"
+    MONITOR=$display polybar -c "$SCRIPTPATH/polybar.conf" $bar &> /dev/null &
+    let index=index+1
+  done <<< "$monitors"
+  exit 0
+fi

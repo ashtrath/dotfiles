@@ -1,0 +1,122 @@
+configuration {
+  font: "JetBrainsMono Nerd Font 12";
+  show-icons: false;
+  icon-theme: "Papirus-Dark";
+  drun-display-format: "{name}";
+  disable-history: false;
+  sidebar-mode: false;
+}
+
+* {
+  background:               #1A1B26FF;
+  background-alt:           #24283BFF;
+  foreground:               #C0CAF5FF;
+  border:                   #7AA2F7FF;
+  border-alt:               #7DCFFFFF;
+  selected:                 #414868FF;
+  urgent:                   #F7768EFF;
+}
+
+window {
+  transparency: "real";
+  background-color: @background;
+  text-color: @foreground;
+  border-radius: 0px;
+  height: 30%;
+  width: 54%;
+  location: center;
+  x-offset: 0;
+  y-offset: 0;
+}
+
+prompt {
+  enabled: true;
+  padding: 0.5% 0.5% 0.5% 0%;
+  background-color: @background-alt;
+  text-color: @foreground;
+}
+
+textbox-prompt-colon {
+  expand: false;
+  str: "System |";
+  background-color: @background-alt;
+  text-color: @foreground;
+  padding: 0.5% 0.5% 0.5% 0%;
+}
+
+inputbar {
+  children: [ textbox-prompt-colon, prompt ];
+  background-color: @background-alt;
+  text-color: @foreground;
+  expand: false;
+  border: 0% 0% 0% 0.2%;
+  border-radius: 0% 0% 0% 0%;
+  border-color: @border;
+  margin: 0% 21.3% 0% 0%;
+  padding: 0.5%;
+  position: center;
+}
+
+listview {
+  background-color: @background;
+  margin: 0% 0% 0% 0%;
+  spacing: 2%;
+  cycle: true;
+  dynamic: true;
+  layout: horizontal;
+}
+
+mainbox {
+  background-color: @background;
+  children: [ inputbar, listview ];
+  spacing: 3.5%;
+  padding: 4% 0% 0% 2%;
+}
+
+element {
+  background-color: @background-alt;
+  text-color: @foreground;
+  orientation: horizontal;
+  border-radius: 0%;
+}
+
+element-text {
+  background-color: #00000000;
+  text-color: inherit;
+  font: "icomoon\-feather 32";
+  expand: true;
+  horizontal-align: 0.5;
+  vertical-align: 0.5;
+  margin: 4.3% 2.7% 5.5% 2.7%;
+}
+
+element normal.urgent,
+element alternate.urgent {
+  background-color: @urgent;
+  text-color: @foreground;
+  border-radius: 0.2%;
+}
+
+element normal.active,
+element alternate.active {
+  background-color: @background-alt;
+  text-color: @foreground;
+}
+
+element selected {
+  background-color: @selected;
+  text-color: @foreground;
+  border: 0% 0% 0.3% 0%;
+  border-radius: 0%;
+  border-color: @border;
+}
+
+element selected.urgent {
+  background-color: @urgent;
+  text-color: @foreground;
+}
+
+element selected.active {
+  background-color: @background-alt;
+  color: @foreground;
+}

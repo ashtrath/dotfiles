@@ -1,0 +1,109 @@
+configuration {
+  font: "JetBrainsMono Nerd Font 12";
+  show-icons: false;
+  icon-theme: "Papirus-Dark";
+  drun-display-format: "{name}";
+  disable-history: false;
+  sidebar-mode: false;
+}
+
+* {
+  background:               #1A1B26FF;
+  background-alt:           #24283BFF;
+  foreground:               #C0CAF5FF;
+  border:                   #7AA2F7FF;
+  border-alt:               #7DCFFFFF;
+  selected:                 #414868FF;
+  urgent:                   #F7768EFF;
+}
+
+window {
+  transparency: "real";
+  background-color: @background;
+  text-color: @foreground;
+  border-radius: 0px;
+  height: 15%;
+  width: 20%;
+  location: center;
+  x-offset: -1em;
+  y-offset: -2em;
+}
+
+textbox-prompt-colon {
+  expand: false;
+  str: "Are you sure?";
+  background-color: @background;
+  text-color: @foreground;
+  padding: 1% 0.8% 0.5% 2.5%;
+}
+
+inputbar {
+  children: [ textbox-prompt-colon ];
+  background-color: @background;
+  text-color: @foreground;
+  expand: false;
+  position: center;
+}
+
+listview {
+  background-color: @background;
+  margin: 0% 0% 0% 0%;
+  spacing: 1.8%;
+  cycle: false;
+  dynamic: false;
+  layout: horizontal;
+}
+
+mainbox {
+  background-color: @background;
+  children: [ inputbar, listview ];
+  spacing: 2.8%;
+  padding: 1% 0% 0% 2.8%;
+}
+
+element {
+  background-color: @background-alt;
+  text-color: @foreground;
+  orientation: horizontal;
+  border-radius: 0%;
+}
+
+element-text {
+  background-color: #00000000;
+  text-color: inherit;
+  expand: true;
+  horizontal-align: 0.5;
+  vertical-align: 0.5;
+  margin: 1.4% 2.2% 1.4% 2.1%;
+}
+
+element normal.urgent,
+element alternate.urgent {
+  background-color: @urgent;
+  text-color: @foreground;
+  border-radius: 0.2%;
+}
+
+element normal.active,
+element alternate.active {
+  background-color: @background-alt;
+  text-color: @foreground;
+}
+
+element selected {
+  background-color: @selected;
+  text-color: @foreground;
+  border: 0% 0% 0.3% 0%;
+  border-radius: 0%;
+  border-color: @border;
+}
+
+element selected.urgent {
+  background-color: @urgent;
+  text-color: @foreground;
+}
+
+element selected.active {
+  background-color: @background-alt;
+  color: @foreground;
+}

@@ -1,0 +1,57 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
+  bg: #1A1B26;
+  bg-alt: #7AA2F7;
+  fg: #C0CAF5;
+  fg-alt: @bg;
+
+  background-color: @bg;
+  text-color: @fg;
+}
+
+window {
+  border: 2px;
+  border-color: #414868;
+  padding: 6px;
+  transparency: "real";
+}
+
+mainbox {
+  children: [inputbar, listview];
+}
+
+inputbar {
+  children: [entry];
+}
+
+entry {
+  padding: 10px;
+}
+
+listview {
+  lines: 10;
+  scrollbar: true;
+}
+
+scrollbar {
+  background-color: @bg;
+  handle-color: @bg-alt;
+  margin: 0 0 0 6px;
+}
+
+element {
+  children: [element-text];
+}
+
+element-text {
+  padding: 10px;
+}
+
+element-text selected {
+  background-color: @bg-alt;
+  text-color: @fg-alt;
+}

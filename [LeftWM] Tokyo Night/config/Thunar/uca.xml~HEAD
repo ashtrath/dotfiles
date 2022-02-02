@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal here</name>
+	<unique-id>1633160926294048-1</unique-id>
+	<command>exo-open --working-directory %f --launch st</command>
+	<description>Example</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+</actions>

@@ -1,0 +1,36 @@
+# ~/.config/betterlockscreenrc
+
+# default options
+display_on=0
+span_image=false
+lock_timeout=300
+fx_list=(dim blur dimblur pixel dimpixel color)
+dim_level=40
+blur_level=1
+pixel_scale=10,1000
+solid_color=333333
+wallpaper_cmd="~/.fehbg"
+# i3lockcolor_bin="i3lock-color" # Manually set command for i3lock-color
+
+# default theme
+loginbox=1A1B26CC
+loginshadow=1A1B26CC
+locktext="Ashtrath sama~..."
+font="monospace"
+ringcolor=A9B1D6
+insidecolor=1A1B26CC
+separatorcolor=A9B1D6
+ringvercolor=A9B1D6
+insidevercolor=1A1B26CC
+ringwrongcolor=A9B1D6
+insidewrongcolor=F7768E
+timecolor=A9B1D6
+time_format="%H:%M:%S"
+greetercolor=A9B1D6
+layoutcolor=A9B1D6
+keyhlcolor=F7768E
+bshlcolor=F7768E
+verifcolor=A9B1D6
+wrongcolor=F7768E
+modifcolor=F7768E
+bgcolor=1A1B26CC

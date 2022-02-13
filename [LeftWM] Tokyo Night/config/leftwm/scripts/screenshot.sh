@@ -23,7 +23,7 @@ case $1 in
 
   area)
     $maimselect -s "$tempfile" && xclip -selection c -t image/png < "$tempfile"
-    notification area &
+    notification &
 
     sleep 1
     rm "$tempfile"
@@ -31,7 +31,7 @@ case $1 in
 
   full)
     $maimfull "$tempfile" && xclip -selection c -t image/png < "$tempfile"
-    notification full &
+    notification &
 
     sleep 1
     rm "$tempfile"

@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+export LANG="POSIX"
 
 # Icons Variable
 DIR=$HOME/.config/dunst/icons/

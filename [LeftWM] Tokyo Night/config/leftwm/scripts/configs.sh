@@ -1,14 +1,14 @@
 #!/usr/bin/env sh
-
-configfile="$HOME/.config/configs"
+export LANG="POSIX"
+FILE="$HOME/.config/configs"
 
 get_filepath() {
-  cat < "$configfile" \
-    | rofi -dmenu -i -p 'config' \
+  awk '{ printf "%-40s %s\n", $1, $2 }' < "$FILE" \
+    | rofi -dmenu -i -theme ~/.config/rofi/theme/list \
     | sed 's/^.*~//g'
 }
 
-configpath="$(get_filepath)"
-if [ -n "$configpath" ]; then
-  xdg-open "$HOME/$configpath"
+CONF_PATH="$(get_filepath)"
+if [ -n "$CONF_PATH" ]; then
+  xdg-open "$HOME/$CONF_PATH"
 fi

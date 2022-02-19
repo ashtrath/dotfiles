@@ -1,9 +1,9 @@
-<h1 align="center">SakuraLight .files</h1>
+<h1 align="center">sakura .files</h1>
 <p align="center">
   <img width="93%" src="../preview/sakura-light.png" />
 </p>
 <p align="center">
-  <b>Ashtrath's Sakura worm Rice</b>
+  <b>Ashtrath's Sakura Worm Rice</b>
 </p>
 
 ## Stuff i used for this rice:

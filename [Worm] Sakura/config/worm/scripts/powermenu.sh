@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-export LANG='POSIX'
+export LC_ALL='POSIX' LANG='POSIX'
 
 rofi_command="rofi -theme $HOME/.config/rofi/theme/powermenu"
 uptime=$(uptime -p | sed -e 's/up //g')

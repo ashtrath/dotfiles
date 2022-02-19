@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-export LANG='POSIX'
+export LC_ALL='POSIX' LANG='POSIX'
 
 # Icons Variable
 DIR=$HOME/.config/dunst/icons/

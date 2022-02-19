@@ -14,7 +14,6 @@ dunst &
 
 ### -- Wallpaper
 if [ -x "$(command -v xwallpaper)" ]; then
-  sleep 1
   xwallpaper --maximize "$CONFIG_DIR/background.jpg" &
 elif [ -x "$(command -v nitrogen)" ]; then
   nitrogen --set-centered "$CONFIG_DIR/background.jpg" &

@@ -40,9 +40,6 @@ alias df='df -h'
 # set :q to exit terminal just like vim
 alias :q='exit'
 
-# LF Ranger like File Manager
-alias lf='lf-ueberzug'
-
 # pacman unlock
 alias unlock="sudo rm /var/lib/pacman/db.lck"
 alias rmpacmanlock="sudo rm /var/lib/pacman/db.lck"

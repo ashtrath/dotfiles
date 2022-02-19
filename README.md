@@ -11,7 +11,7 @@
   <img width=90% src="./preview/nord.png" />
 </p>
 
-## [worm] [SakuraLight](https://github.com/Dyzean/dotfiles/tree/main/%5Bworm%5D%20SakuraLight)
+## [Worm] [Sakura](https://github.com/Dyzean/dotfiles/tree/main/%5Bworm%5D%20SakuraLight)
 
 <p align="center">
   <img width=90% src="./preview/sakura-light.png" />

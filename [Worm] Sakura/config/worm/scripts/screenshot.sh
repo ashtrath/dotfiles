@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 export LC_ALL='POSIX' LANG='POSIX'
 
 maimselect="maim -s --noopengl --capturebackground --hidecursor"

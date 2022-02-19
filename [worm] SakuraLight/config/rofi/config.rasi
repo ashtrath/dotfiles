@@ -1,0 +1,5 @@
+configuration {
+	font: "Iosevka Mayukai Serif 12";
+	kb-row-select: "Tab";
+	kb-row-tab: "";
+}

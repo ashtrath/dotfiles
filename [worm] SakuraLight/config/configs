@@ -1,0 +1,10 @@
+spotify-tui: ~/.config/spotify-tui/client.yml
+spotifyd: ~/.config/spotifyd/spotifyd.conf
+rofi: ~/.config/rofi/config.rasi
+dunst: ~/.config/dunst/dunstrc
+nvim: ~/.config/nvim/init.vim
+cava: ~/.config/cava/config
+worm: ~/.config/worm/rc
+configs: ~/.config/configs
+xresources: ~/.Xresources
+zsh: ~/.zshrc

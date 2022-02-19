@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+# Config directry variable
+CONFIG_DIR="$HOME/.config/worm"
+
+configError() {
+  dunstify -u critical "worm config error" "$2" &
+}
+
+### -- Boot Startup apps
+picom --config "$CONFIG_DIR/picom.conf" &
+sxhkd -c "$CONFIG_DIR/sxhkdrc" &
+dunst &
+
+### -- Wallpaper
+if [ -x "$(command -v xwallpaper)" ]; then
+  sleep 1
+  xwallpaper --maximize "$CONFIG_DIR/background.jpg" &
+elif [ -x "$(command -v nitrogen)" ]; then
+  nitrogen --set-centered "$CONFIG_DIR/background.jpg" &
+elif [ -x "$(command -v feh)" ]; then
+  feh --bg-fill "$CONFIG_DIR/background.jpg" &
+else
+  configError "can't detect any wallpaper setter, please install xwallpaper, nitrogen or feh!"
+fi
+
+### -- Polybar
+if [ -x "$(command -v polybar)" ]; then
+  polybar -c "$CONFIG_DIR/polybar.ini" tray &
+  polybar -c "$CONFIG_DIR/polybar.ini" ws &
+else
+  configError "polybar is not installed!"
+fi
+
+### -- Worm Config
+wormc layout floating
+wormc border-width 0
+wormc struts 50 15 15 15
+wormc gaps 15
+wormc text-font 'SF Pro:style=pixelsize=15:antialias=true'
+
+# Colouring
+wormc text-active-pixel $((16#4b4646))
+wormc text-inactive-pixel $((16#4b4646))
+wormc frame-active-pixel $((16#ebe6e1))
+wormc frame-inactive-pixel $((16#fffaf5))
+
+# Titlebar Decoration
+wormc frame-left 'T;' # Place Window Title on the left side
+wormc frame-right 'C;' # Place Close Button on the right side
+wormc close-path "$HOME/.themes/SakuraLight/gnome-shell/assets/window-close-active.svg"
+wormc button-offset 12 8

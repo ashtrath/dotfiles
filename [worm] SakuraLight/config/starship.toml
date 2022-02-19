@@ -1,0 +1,42 @@
+# Custom prompt/format
+format = """
+$time$username$directory$git_branch$git_status$go$python$cmd_duration
+$character"""
+
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 10
+
+[character]
+success_symbol = "[❯❯❯](bold purple) "
+error_symbol =   "[❯❯❯](bold red) "
+
+[line_break]
+disabled = true
+
+[username]
+style_user = "blue bold"
+style_root = "red bold"
+format = "[$user at:]($style) "
+disabled = false
+show_always = true
+
+[directory]
+read_only = " 🔒"
+read_only_style = "red"
+truncation_length = 10
+truncate_to_repo = true
+
+[cmd_duration]
+format = "underwent [$duration](bold yellow)"
+min_time = 100
+disabled = false
+
+[time]
+disabled = false
+format = '[\[$time\]](bold) '
+time_format = "%T"
+utc_time_offset = "+7"
+
+[git_branch]
+format = "on [$symbol$branch ](bold purple)"
+symbol = " "

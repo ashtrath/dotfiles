@@ -1,0 +1,18 @@
+[Added Associations]
+
+[Default Applications]
+text/*=nvim.desktop;
+text/plain=org.xfce.mousepad.desktop;
+
+image/png=nsxiv.desktop;
+image/jpeg=nsxiv.desktop;
+image/png=nsxiv.desktop;
+
+image/gif=mpv.desktop;
+video/*=mpv.desktop;
+
+text/html=firefox.desktop;
+application/x-extension-html=firefox.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/terminal=st.desktop;

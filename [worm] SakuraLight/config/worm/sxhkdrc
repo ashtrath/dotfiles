@@ -1,0 +1,66 @@
+##---------- applications ----------##
+
+# Launch Basic App
+super + {f,w,t}
+  {thunar,firefox,st}
+
+ctrl + shift + escape
+  xfce4-taskmanager
+
+##---------- multimedia keys ----------##
+
+# App Launcher
+super + r
+  rofi -no-lazy-grab -show drun -modi drun -theme $HOME/.config/rofi/theme/launcher.rasi
+
+# Powermenu
+super + ctrl + p
+  sh $HOME/.config/worm/scripts/powermenu.sh
+
+# Rofi config menu
+super + shift + c
+  sh $HOME/.config/worm/scripts/configs.sh
+
+# Reload sxhkdrc
+super + shift + r
+  pkill -USR1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
+
+# Full Screenshot
+Print
+  sh $HOME/.config/worm/scripts/screenshot.sh full
+
+# Area Screenhot
+shift + Print
+  sh $HOME/.config/worm/scripts/screenshot.sh area
+
+# Manage Volume
+XF86Audio{Raise,Lower}Volume
+  sh $HOME/.config/worm/scripts/volume.sh {up,down}
+
+XF86AudioMute
+  sh $HOME/.config/worm/scripts/volume.sh mute
+
+
+##---------- worm's keybindings ----------##
+
+# Maximize app
+super + shift + f
+  wormc maximize-active-client
+
+# Close app
+ctrl + q
+  wormc close-active-client
+
+# Restart worm
+super + ctrl + r
+  worm
+
+# Switch tags
+ctrl + {1-9}
+  wormc switch-tag {1-9}
+
+# Move window to tag
+super + ctrl + {1-9}
+  wormc move-active-tag {1-9}
+
+

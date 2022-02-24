@@ -36,7 +36,7 @@ wormc layout floating
 wormc border-width 0
 wormc struts 50 15 15 15
 wormc gaps 15
-wormc text-font 'SF Pro:style=pixelsize=15:antialias=true'
+wormc text-font 'SF Pro:pixelsize=15:antialias=true'
 
 # Colouring
 wormc text-active-pixel $((16#4b4646))

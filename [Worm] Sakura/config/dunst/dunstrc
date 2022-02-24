@@ -4,7 +4,7 @@
   shrink = no
   padding = 15
   horizontal_padding = 15
-  
+
   width = 275
   height = 100
   offset = 15x25
@@ -16,7 +16,7 @@
   separator_color = "#151515"
 
   sort = no
-  font = Noto Emoji 10, Iosevka Mayukai Serif 10
+  font = Noto Emoji 10, SF Pro 10
   markup = full
   format = "<b>%s</b>\n%b"
   alignment = left

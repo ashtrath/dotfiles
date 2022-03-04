@@ -17,6 +17,9 @@ set -x VISUAL nvim
 # Custom sudo prompt
 set -x SUDO_PROMPT (printf "\033[1;31mPassword : \033[0;0m" )
 
+# Alias for neovim
+alias v="nvim"
+
 # Replace ls with exa
 alias ls="exa --icons"
 alias la='exa -a --icons'
@@ -74,7 +77,7 @@ alias userlist="cut -d: -f1 /etc/passwd"
 alias mount="mount | column -t"
 
 # merge new settings
-alias merge="xrdb merge ~/.Xresources && kill -USR1 (pidof st)"
+alias merge="xrdb merge ~/.Xresources && pkill -USR1 -x st"
 
 # Aliases for software managment
 # pacman or pm
@@ -134,6 +137,8 @@ alias sysfailed="systemctl list-units --failed"
 # shutdown or reboot
 alias ssn="sudo shutdown now"
 alias sr="sudo reboot"
+
+alias v="nvim"
 
 # give the list of all installed desktops - xsessions desktops
 alias xd="ls /usr/share/xsessions"

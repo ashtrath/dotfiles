@@ -138,8 +138,6 @@ alias sysfailed="systemctl list-units --failed"
 alias ssn="sudo shutdown now"
 alias sr="sudo reboot"
 
-alias v="nvim"
-
 # give the list of all installed desktops - xsessions desktops
 alias xd="ls /usr/share/xsessions"
 

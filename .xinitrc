@@ -22,10 +22,10 @@ export TERMINAL=st
 xset -b
 
 # key repeat rate
-xset r rate 250 60 &
+xset r rate 250 60
 
 # disable dpms?
-xset s off -dpms &
+xset s off -dpms
 
 # startup
-exec CM_LAUNCHER=rofi clipmenud &
+clipmenud &
